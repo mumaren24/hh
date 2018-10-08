@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 过渡</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F7F7F7;
+        }
+        
+        .pop {
+            width: 300px;
+            height: 120px;
+            margin: 30px auto;
+            background: url(images/paopao.png) top left no-repeat, url(images/paopao.png) bottom right no-repeat #336699;
+            transition: all 0.3s;
+        }
+        
+        .pop:hover {
+            background-position: left bottom, top right;
+        }
+    </style>
+    <script>
+        // window.onload = function() {
+        //     var div = document.querySelector("div");
+        //     div.addEventListener('transitionend', function() {
+        //         alert(11);;
+        //     })
+        // }
+    </script>
+</head>
+
+<body>
+    <div class="pop"></div>
+</body>
+
+</html>
